@@ -7,8 +7,8 @@ let gameStarted = false;
 
 // Create function for setting the default images
 function setDefaultImg() {
-  img1.setAttribute("src", "/images/dice1.png");
-  img2.setAttribute("src", "/images/dice1.png");
+  img1.setAttribute("src", "images/dice1.png");
+  img2.setAttribute("src", "images/dice1.png");
   document.querySelector("h1").innerHTML = "Let's Find The Winner🏆";
   document.querySelector(".player-1").innerHTML = "Player 1👊🏽";
   document.querySelector(".player-2").innerHTML = "Player 2💪🏽";
@@ -26,8 +26,8 @@ function updateImgAndWinner() {
     const randomNum2 = Math.floor(Math.random() * 6 + 1);
 
     // Let's update images based on the random number generated for both images
-    img1.setAttribute("src", "/images/dice" + randomNum1 + ".png");
-    img2.setAttribute("src", "/images/dice" + randomNum2 + ".png");
+    img1.setAttribute("src", "images/dice" + randomNum1 + ".png");
+    img2.setAttribute("src", "images/dice" + randomNum2 + ".png");
 
     if (randomNum1 > randomNum2) {
       document.querySelector("h1").innerHTML = "Player 1 Wins 🚩";
