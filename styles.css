@@ -1,0 +1,35 @@
+footer{
+    margin: 5% 0 auto;
+    background-color: brown;
+    color: aliceblue;
+    padding: 25px 0;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+.player-1,.player-2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width:768px) {
+    .player-container img{
+        height: 150px;
+    }
+}
+
+@media (max-width:477px) {
+    .player-container img{
+        height: 100px;
+    }
+}
+@media (max-width:376px) {
+    .player-container img{
+        height: 70px;
+        
+    }
+    .img-fluid{
+        display: inline;
+    }
+}
